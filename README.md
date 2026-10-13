@@ -7,8 +7,8 @@
 Medical imaging and full-stack AI. I like problems where someone actually uses the thing at the end.
 
 <img src="https://img.shields.io/badge/Belfast,_UK-0A66C2?style=flat-square&logo=googlemaps&logoColor=white" alt="Belfast" />
-<img src="https://img.shields.io/badge/Open_to_graduate_roles-2F9E44?style=flat-square" alt="Open to work" />
-<img src="https://img.shields.io/badge/Right_to_work_in_the_UK-555555?style=flat-square" alt="Right to work" />
+<img src="https://img.shields.io/badge/Medical_imaging-5C3EE8?style=flat-square" alt="Medical imaging" />
+<img src="https://img.shields.io/badge/Full--stack_AI-2F9E44?style=flat-square" alt="Full stack AI" />
 
 <a href="https://www.linkedin.com/in/ramdas-chaugale-608b3b2a4/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:ramdaschaugale33@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" /></a>
