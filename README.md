@@ -82,7 +82,7 @@ Face shape analysis and hairstyle try on. The face geometry is computed in the b
 468 landmarks, so no photograph leaves the device.
 
 Natural language search over the catalogue, a stylist assistant that cites its sources, and
-salon booking. 133 backend tests under CI.
+salon booking. 139 backend tests under CI.
 
 </details>
 
