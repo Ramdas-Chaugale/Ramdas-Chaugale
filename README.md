@@ -49,6 +49,62 @@ No scans or weights are published. The imaging data belongs to the partner.
 </details>
 
 <details>
+<summary><b>backstop</b> &nbsp;·&nbsp; guardrails and an evaluation harness for a tool calling agent</summary>
+
+<br>
+
+[**backstop**](https://github.com/Ramdas-Chaugale/backstop)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Pytest](https://img.shields.io/badge/evals-20_passing-1b6b4a?style=flat-square)
+
+A customer support agent with three tools, and the three things around it that actually
+matter: guardrails that run **before** a tool executes, twenty adversarial test
+conversations, and a baseline gate that fails the build when behaviour drifts.
+
+An agent evaluation suite that calls a live model cannot run in CI. It costs money on every
+push and gives a different answer each time. So the model layer records each call once,
+keyed by a hash of the conversation, and replays from disk. CI runs free, offline and
+deterministic.
+
+The suite found two faults in my own guardrails on its first full run. One rule checked a
+confirmation field that nothing in the system ever wrote to. Another was registered against
+tools, so it could never fire on a turn that called no tool. Both are written up in the
+README, because a rule that cannot fire still reads like protection in a code review.
+
+</details>
+
+<details>
+<summary><b>jobfit</b> &nbsp;·&nbsp; retrieval over real job ads, built to be measured</summary>
+
+<br>
+
+[**jobfit**](https://github.com/Ramdas-Chaugale/jobfit)
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-66_passing-1b6b4a?style=flat-square)
+
+Ask in plain English, get the roles that match, each with the sentence from the ad that
+justifies it. 135 ads I labelled by hand, 61 queries I wrote, three query families kept
+apart so an easy one cannot hide a failure in a hard one.
+
+Measuring it properly found two bugs in my own code before it said anything about the
+model. A corpus filter running at 21% precision, because `llm` matched inside
+*fulfillment* and 121 of 135 ads mention AI. And a third of all chunks carrying no
+requirement signal at all.
+
+It also found that a plain keyword baseline beat my embedding model on two of three query
+families. That is in the README, because a finding I did not want is still a finding.
+
+The web interface puts all six retrievers side by side on the same query, so the thing the
+numbers claim is something you can watch happen.
+
+</details>
+
+<details>
 <summary><b>EduTech AI</b> &nbsp;·&nbsp; a learning platform running live on Vercel</summary>
 
 <br>
@@ -121,4 +177,4 @@ salon booking. 139 backend tests under CI.
 
 ---
 
-<sub>Some repositories here are forks I kept while learning. The three above are my own work.</sub>
+<sub>Some repositories here are forks I kept while learning. The five above are my own work.</sub>
