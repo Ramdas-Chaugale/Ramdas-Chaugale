@@ -80,7 +80,7 @@ README, because a rule that cannot fire still reads like protection in a code re
 
 <br>
 
-[**jobfit**](https://github.com/Ramdas-Chaugale/jobfit)
+[**jobfit**](https://github.com/Ramdas-Chaugale/jobfit) &nbsp;·&nbsp; [**live demo**](https://jobfit-liard-omega.vercel.app)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
