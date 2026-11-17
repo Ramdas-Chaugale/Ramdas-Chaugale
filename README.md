@@ -128,7 +128,7 @@ backoff and a fallback path, so it keeps working when one of them rate limits me
 
 <br>
 
-[**the-cut-point**](https://github.com/Ramdas-Chaugale/the-cut-point)
+[**the-cut-point**](https://github.com/Ramdas-Chaugale/the-cut-point) &nbsp;·&nbsp; [**live demo**](https://cutpoint-cyan.vercel.app)
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
